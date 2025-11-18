@@ -71,6 +71,28 @@ nav a {
     border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
 }
 
+.card-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #000000;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
+  }
+  
+.card h3 {
+    margin-bottom: 10px;
+  }
+
 /* Footer */
 footer {
     text-align: center;
@@ -80,8 +102,8 @@ footer {
 }
 
 @font-face {
-    font-family: 'CindieMono'; /* Choose a descriptive name for your font */
-    src: url('CindieMono-D.otf') format('opentype'); /* Specify the path and format */
-    font-weight: normal; /* Optional: Define weight if applicable */
-    font-style: normal; /* Optional: Define style if applicable */
+    font-family: 'CindieMono'; 
+    src: url('CindieMono-D.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal;
 }
