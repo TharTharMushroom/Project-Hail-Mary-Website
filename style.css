@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    /*background-image: linear-gradient(bottom,#a68535,#dac53e);*/
+    color: white;
+    width: auto;
+  height: 100px;
+  background-image: linear-gradient(to top, #a68535, #dac53e, #dac53e);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: rgb(0, 0, 0);
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    border: 8px solid transparent;
+    border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #dac53e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #a68535;
+}
+
+/* Content Section */
+.content {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #212121;
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: 'CindieMono'; /* Choose a descriptive name for your font */
+    src: url('CindieMono-D.otf') format('opentype'); /* Specify the path and format */
+    font-weight: normal; /* Optional: Define weight if applicable */
+    font-style: normal; /* Optional: Define style if applicable */
+}
