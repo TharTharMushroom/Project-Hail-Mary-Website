@@ -61,25 +61,77 @@ nav a {
     background-color: #a68535;
 }
 
-/* Content Section */
-.content {
+.content{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    width: calc(100% - 40px);
+    align-items: stretch;
+}
+
+.main-content {
+    flex: 8;
+    min-width: 300px;
     background: rgb(0, 0, 0);
     padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
+
+}
+
+.astrophage{
+    display: flex;
+    gap: 20px;
     margin: 20px;
+    width: calc(100% - 40px);
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.astrophage-content {
+    flex:auto;
+    min-width: 300px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
+
+}
+
+.image-content {
+    flex: 2;
+    min-width: 90px;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    flex-direction: column;
     border-radius: 10px;
     border: 5px solid transparent;
     border-image: linear-gradient(to top, #a68535, #dac53e, #dac53e) 1;
 }
 
+.image-content img {
+    width: 100%;
+    aspect-ratio: 651 / 1000; /* preserves exact original proportions */
+    object-fit: contain; 
+    display: block;
+}
+
 .card-area {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 
 .card {
+    margin-top: 5px;
+    margin-bottom: 5px;
     background: #000000;
     border-radius: 10px;
     padding: 30px;
